@@ -1,19 +1,16 @@
 function playVideo(videoSrc) {
     const videoContainer = document.getElementById('video-container');
-    const videoPlayer = document.getElementById('video-player');
-    const videoSource = document.getElementById('video-source');
+    const videoFrame = document.getElementById('video-frame');
 
-    videoSource.src = videoSrc;
-    videoPlayer.load();
+    videoFrame.src = videoSrc;
     videoContainer.style.display = 'block';
-    videoPlayer.play();
 
-    videoPlayer.requestFullscreen();
+    videoFrame.requestFullscreen();
 }
 
 document.getElementById('video-container').addEventListener('click', function() {
     this.style.display = 'none';
-    const videoPlayer = document.getElementById('video-player');
-    videoPlayer.pause();
+    const videoFrame = document.getElementById('video-frame');
+    videoFrame.src = '';
     document.exitFullscreen();
 });
