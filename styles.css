@@ -38,19 +38,45 @@ button:hover {
 ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 li {
-    margin: 10px 0;
+    margin: 10px;
+    text-align: center;
 }
 
 a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
+    display: block;
+    max-width: 150px;
 }
 
 a:hover {
     color: #555;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.series-list img {
+    height: 120px;
+    width: 80px;
+}
+
+.episode-list img {
+    height: 80px;
+    width: 120px;
+}
+
+span {
+    display: block;
+    margin-top: 10px;
+}
