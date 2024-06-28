@@ -14,25 +14,49 @@
         <h1>Détails de la Série</h1>
         <ul class="episode-list">
             <li>
-                <a href="#">
+                <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Détails de la Série - Mon Site de Séries</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo du site" class="logo">
+    </header>
+    <main>
+        <h1>Détails de la Série</h1>
+        <ul class="episode-list">
+            <li>
+                <a href="#" onclick="playVideo('kaiju1.mp4')">
                     <img src="episode1.jpg" alt="Image de l'Épisode 1">
                     <span>Épisode 1</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" onclick="playVideo('video2.mp4')">
                     <img src="episode2.jpg" alt="Image de l'Épisode 2">
                     <span>Épisode 2</span>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="#" onclick="playVideo('video3.mp4')">
                     <img src="episode3.jpg" alt="Image de l'Épisode 3">
                     <span>Épisode 3</span>
                 </a>
             </li>
             <!-- Ajoutez d'autres épisodes ici -->
         </ul>
+        <div id="video-container" class="video-container">
+            <video id="video-player" controls>
+                <source id="video-source" src="" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+        </div>
     </main>
 </body>
 </html>
+
